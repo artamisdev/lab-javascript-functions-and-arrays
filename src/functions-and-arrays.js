@@ -1,41 +1,96 @@
 // Iteration #1: Find the maximum
-function maxOfTwoNumbers() {}
 
-
+function maxOfTwoNumbers(a, b) {
+  if (a > b){
+    return a
+  } else {
+    return b
+  }  
+}
 
 // Iteration #2: Find longest word
+
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
 
-function findLongestWord() {}
+function findLongestWord(array) {
+  if (!array.length) {
+    return null
+  }
+  
+  if (array.length === 1) {
+    return array[0]
+  }
 
+  let maior = ''
 
+  array.forEach(element => {
+    if (element.length > maior.length){
+      maior = element
+    } 
+  });
+
+   return maior;
+}
 
 // Iteration #3: Calculate the sum
+
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
-function sumNumbers() {}
+function sumNumbers(arraynumbers) {
+  if (!arraynumbers.length){
+    return 0; 
+  } 
 
+  let soma = 0
 
+arraynumbers.forEach((element) => {
+  soma += element; 
+})
+return soma;
+} 
+ 
 
 // Iteration #3.1 Bonus:
-function sum() {}
+function sum(arreasy) {
+  if (!arreasy.length){
+    return 0;
+  }
 
-
+}
 
 // Iteration #4: Calculate the average
 // Level 1: Array of numbers
 const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 
-function averageNumbers() {}
+function averageNumbers(arraynum) {
+
+   if (!arraynum.length){
+     return null;
+   }
+ let sumOfArray = sumNumbers(arraynum);
+ let result = sumOfArray / arraynum.length;
+ return result;
+}
 
 
 // Level 2: Array of strings
 const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
 
-function averageWordLength() { }
+function averageWordLength(string) {
+  if (!string.length){
+    return null;
+  }
+
+ }
 
 // Bonus - Iteration #4.1
-function avg() {}
+function avg(arr1) {
+  if (!arr1.length){
+    return null;
+  }
+
+  
+}
 
 // Iteration #5: Unique arrays
 const wordsUnique = [
@@ -52,14 +107,35 @@ const wordsUnique = [
   'bring'
 ];
 
-function uniquifyArray() {}
+
+function uniquifyArray(arr2) {
+  let novaarr = []
+    arr2.forEach((element) => {
+      if (!novaarr.includes(element)){
+        novaarr.push(element);
+      }
+  
+})
+
+
+
+  if (!arr2.length){
+    return null;
+  }
+
+  
+}
 
 
 
 // Iteration #6: Find elements
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
 
-function doesWordExist() {}
+function doesWordExist(arr3) {
+  if (!arr3.length){
+    return null;
+  }
+}
 
 
 
